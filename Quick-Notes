@@ -22,3 +22,16 @@ const realName = hero.realName;
 
 const { name, realName } = hero;
 ----
+
+Sort Array:
+----
+let example = [
+  ['harry class', 4],
+  ['harrold class', 8],
+  ['henry class', 3],
+  ['horehay class', 10]
+  
+]
+
+const sortedActivities = example.sort((a, b) => b[1] - a[1])
+----
