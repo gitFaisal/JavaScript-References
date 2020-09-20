@@ -3,7 +3,7 @@ ____________________________________________________________________
 ____________________________________________________________________
 
 Deconstruction:
-----
+----*
 const hero = {
   name: 'Batman',
   realName: 'Bruce Wayne'
@@ -21,10 +21,10 @@ const realName = hero.realName;
 // is equivalent to:
 
 const { name, realName } = hero;
-----
+----*
 
 Sort Array:
-----
+----*
 let example = [
   ['harry class', 4],
   ['harrold class', 8],
@@ -34,4 +34,16 @@ let example = [
 ]
 
 const sortedActivities = example.sort((a, b) => b[1] - a[1])
-----
+----*
+
+findIndex(): This one is to find the index of an object in an array based on some value.
+----*
+a = [
+  {prop1:"abc",prop2:"qwe"},
+  {prop1:"bnmb",prop2:"yutu"},
+  {prop1:"zxvz",prop2:"qwrq"}];
+    
+index = a.findIndex(x => x.prop2 ==="yutu");
+
+console.log(index);
+----*
