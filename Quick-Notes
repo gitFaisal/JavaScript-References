@@ -37,6 +37,8 @@ const sortedActivities = example.sort((a, b) => b[1] - a[1])
 ----*
 
 findIndex(): This one is to find the index of an object in an array based on some value.
+Notes: While this is good when needed, using a loop might be faster for a really
+big array. Loop being roughly 7-8 times faster.
 ----*
 a = [
   {prop1:"abc",prop2:"qwe"},
