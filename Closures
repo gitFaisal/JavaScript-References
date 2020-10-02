@@ -1,0 +1,19 @@
+Javascript Closure refreshers:
+----*
+Example: 
+
+function makeAdder(initValue) {
+  return function(toAdd) {
+    return initValue + toAdd;
+  }
+}
+
+// create varialbe with initial value 
+var add3 = makeAdder(3)
+// add 3 to initial value 
+console.log(add3(3))  // output: 6
+
+-----*
+
+In the above example the inner function is being returned before it executes <brb>
+when setting 'var add3 = makeAdder(3)'. 
